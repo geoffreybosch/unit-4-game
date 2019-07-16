@@ -8,7 +8,7 @@ var answerC3 = "";
 var answerC4 = "";
 
 function updateAnswer(){
-    answer = parseInt([Math.floor(Math.random() * 102)]+19);
+    answer = parseInt([Math.floor(Math.random() * 102)+19]);
     $("#numToGuess").text(answer);
     $("#score").text(u)
 }
@@ -34,16 +34,16 @@ function checkScore(){
 }
 
 function updateAnswerC1(){
-    answerC1 = parseInt([Math.floor(Math.random() * 12)]+1);
+    answerC1 = parseInt([Math.floor(Math.random() * 12)+1]);
 }
 function updateAnswerC2(){
-    answerC2 = parseInt([Math.floor(Math.random() * 12)]+1);
+    answerC2 = parseInt([Math.floor(Math.random() * 12)+1]);
 }
 function updateAnswerC3(){
-    answerC3 = parseInt([Math.floor(Math.random() * 12)]+1);
+    answerC3 = parseInt([Math.floor(Math.random() * 12)+1]);
 }
 function updateAnswerC4(){
-    answerC4 = parseInt([Math.floor(Math.random() * 12)]+1);
+    answerC4 = parseInt([Math.floor(Math.random() * 12)+1]);
 }
 
 function updateCrystals(){
