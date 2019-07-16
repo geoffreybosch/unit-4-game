@@ -5,17 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystal Collector</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
     <h1>Crystal Collector</h1>
 
-    <p>You will be given a random number at the start of the game. <br>There are four crystals below. By clicking on a crystal you you will add a specific amount of points to your total score. <br>You win the game my matching your total score to a random number, you lose the game if your total score goes above a random number. <br>The value of each crystal is hidden from you until you click on it. <br> Each time when the game starts, the game will change the values of each crystal.</p>
+    <p id="instructions"><span class="big-text">T</span>he game will give you a random number at the start of the game. <br><span class="big-text">H</span>ere you will see four crystals. By clicking on a crystal you you will add a specific amount of points to your total score. <br><span class="big-text">I</span>n order to win the game you have to match your total score to the big number, you lose the game if your total score goes above that number. <br><span class="big-text">C</span>rystal's have a value that is hidden from you until you click on it. <br><span class="big-text">K</span>ibosh! Each time when the game starts, the game will change the values of each crystal.</p>
 
     <div id="numToGuess">0</div>
-    <div id="stats">
-        <p>Wins: <wins>0</wins></p>
+    <div>
+        <p class="stats">Wins: <wins>0</wins></p>
         <br>
-        <p>Losses: <losses>0</losses></p>
+        <p class="stats">Losses: <losses>0</losses></p>
     </div>
     <div id="crystals">
         <img src="https://www.harmanbeads.com/assets/images/swarovski%20products/fancy%20stones/4799/4799_LavenderDeLite_thumbnail.jpg" alt="Crystal 1" id="crystal-1">

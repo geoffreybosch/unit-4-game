@@ -2,6 +2,10 @@ var win = 0;
 var loss = 0;
 var answer = "";
 var u = 0;
+var answerC1 = "";
+var answerC2 = "";
+var answerC3 = "";
+var answerC4 = "";
 
 function updateAnswer(){
     answer = parseInt([Math.floor(Math.random() * 100)]);
@@ -17,6 +21,10 @@ function checkScore(){
         updateAnswer();
         u=0
         $("#score").text(u)
+        updateAnswerC1();
+        updateAnswerC2();
+        updateAnswerC3();
+        updateAnswerC4();
     }
     else if(answer < u){
         loss= loss + 1;
@@ -24,27 +32,47 @@ function checkScore(){
         updateAnswer();
         u=0
         $("#score").text(u)
+        updateAnswerC1();
+        updateAnswerC2();
+        updateAnswerC3();
+        updateAnswerC4();
     }
 }
 
+function updateAnswerC1(){
+    answerC1 = parseInt([Math.floor(Math.random() * 13)]);
+}
+function updateAnswerC2(){
+    answerC2 = parseInt([Math.floor(Math.random() * 13)]);
+}
+function updateAnswerC3(){
+    answerC3 = parseInt([Math.floor(Math.random() * 13)]);
+}
+function updateAnswerC4(){
+    answerC4 = parseInt([Math.floor(Math.random() * 13)]);
+}
+updateAnswerC1();
+updateAnswerC2();
+updateAnswerC3();
+updateAnswerC4();
 
 $("#crystal-1").on('click', function(){
-    u= u+8
+    u= u+answerC1
     $("#score").text(u)
     checkScore()
 })
 $("#crystal-2").on('click', function(){
-    u= u+3
+    u= u+answerC2
     $("#score").text(u)
     checkScore()
 })
 $("#crystal-3").on('click', function(){
-    u= u+5
+    u= u+answerC3
     $("#score").text(u)
     checkScore()
 })
 $("#crystal-4").on('click', function(){
-    u= u+2
+    u= u+answerC4
     $("#score").text(u)
     checkScore()
 })

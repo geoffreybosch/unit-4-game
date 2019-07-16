@@ -1,0 +1,54 @@
+html{
+    background-color: rgb(239,64,34);
+    background-image: url(https://www.pngarts.com/files/2/Pattern-PNG-Pic.png)
+}
+body{
+    display: block;
+    background-color: rgb(239,64,34);
+    font-family: Helvetica, sans-serif;
+    color: white;
+    width: 60%;
+    margin: 0px;
+    margin-left: 15%;
+    /* margin-top: 5%; */
+    padding: 5%;
+}
+
+h1{
+    font-size: 250%;
+    color: white;
+}
+
+.stats, .scoreBox{
+    font-size: 125%;
+    color: rgb(239,64,34);
+    font-weight: bold;
+    border: 2px solid white;
+    background-color: white;
+    display: block;
+    width: 50%;
+}
+
+#instructions{
+    line-height: 150%;
+    width: 75%
+}
+
+#numToGuess, #score{
+    font-size: 150px;
+    border: 2px solid white;
+    width:40%;
+    margin-left: 30%;
+    margin-right:30%;
+    align-content: initial;
+    background-color: rgb(239,64,34);
+    color: white;
+    background-image: url(https://www.pngarts.com/files/2/Pattern-PNG-Pic.png)
+
+
+}
+
+.big-text{
+    font-size: 250%;
+    line-height: 110%;
+}
